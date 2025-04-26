@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+hr {
+  
+    width: 20vw;
+    margin: 20px auto; /* 20px top and bottom, auto left-right */
+  }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* height: 100vh; */
+    width: 100vw;
+    background-color: #f2f2fd
+}
+
+.bottom,
+.top {
+
+    z-index: -1;
+
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+}
+
+.top {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.upper-div {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.upper-div1 {
+    /* width: 100vw;
+    height: 50%; */
+    color: gray;
+    font-size: x-large;
+    margin-bottom: 30px;
+    width: auto;
+    height: auto;
+}
+
+.upper-div1 h1 {
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+}
+
+.upper-div2 {
+    /* width: 100vw;
+    height: 50%; */
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper-div2 p{
+ font-weight: bolder;
+ font-size: 20px;
+ color: gray;
+}
+
+.lower-div {
+    height: 80vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.basic,
+.professional,
+.master {
+
+    height: 60vh;
+    width: 25vw;
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.basic,
+.master {
+    background-color: white;
+    color:  rgba(0, 0, 0, 0.7); ;
+}
+
+.basic hr,
+.master hr {
+    border-top: 1px solid gray;
+    margin-top: 20px;
+}
+
+.professional hr {
+    margin-top: 20px;
+}
+
+.professional {
+    margin-top: 2.5vh;
+    height: 65vh;
+    width: 22vw;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+}
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px; /* Optional spacing between $ and price */
+}
+
+.price  p{
+
+  font-size: 3vw;
+  padding: 0px;
+  margin: 0px;
+ 
+}
+
+.user,
+.storage,
+.data,
+.learnMore {
+    color: gray;
+}
+
+.plan {
+    flex-direction: column;
+    color: gray;
+    padding: 10px;
+}
+
+.learnMore {
+
+    background-color: hsl(237, 63%, 64%);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    /* letter-spacing: 2px; */
+    cursor: pointer;
+    /* width: 235px;
+    height: 55px; */
+    width: 16.32vw;
+height: 6.11vh;
+
+
+}
+
+.professional .plan,
+.professional .storage,
+.professional .user,
+.professional .data,
+.professional .learnMore,
+.professional h1 , .professional p {
+    color: white;
+}
+
+.professional .plan{
+    padding: 20px;
+}
+.professional .learnMore {
+    background-color: white;
+    color: hsl(237, 63%, 64%);
+  
+}
+.professional .Button{
+    padding-bottom: 20px;
+}
+/* p{
+    text-align: center;
+    padding: 10px;
+} */
+
+p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+ hr {
+    width: 20vw;
+    display: block;
+}
+
+.storage p,
+.user p,
+.data p,
+.plan p {
+    margin-bottom: 25px; /* or whatever gap you want */
+    font-size: larger;
+}
+
+.storage hr,
+.user hr,
+.data hr,
+.plan hr,
+.price hr {
+    margin-top: 10px;
+    margin-bottom: 10px; /* uniform margins around <hr> */
+}
+.price h1{
+    
+    padding-right: 10%;
+}
+.professional .plan h2{
+    padding-top: 0px;
+}
+
+@media (max-width:768px) {
+
+    .container {
+        min-height: auto;
+        /* height: 100%; */
+        position: relative;
+        overflow-x: hidden;
+        margin-bottom: 30px;
+    }
+
+    .lower-div {
+
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .basic,
+    .professional,
+    .master {
+
+        /* height: 60vh; */
+        height: auto;
+        min-width: 350px;
+        display: flex;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+    .bottom-desktop {
+        display: none;
+    }
+
+    .bottom-mobile {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+    .price p{
+        font-size: 25px;
+        margin-left: 35px;
+    }
+    .price{
+        width: 80%;
+    }
+    .Button{
+        font-size: 0.7rem;
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        /* padding-bottom: 15px; */
+    }
+    .learnMore{
+        width: 80%;
+    }
+    .price h1{
+        font-size: 50px;
+        margin-right: 10%;
+    }
+    hr{
+        width: 200px;
+    }
+    
+    
+
+}
+
+
+.toggle {
+    display: flex;
+    width: 50px;
+    height: 30px;
+    border-radius: 13px;
+    background-color: hsl(237, 63%, 64%);
+    align-items: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 2px;
+    margin: 0px 10px;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.toggle.active .circle {
+    transform: translateX(20px);
+}
+
+/* additional
+.basic:hover,
+.professional:hover,
+.master:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+} */
